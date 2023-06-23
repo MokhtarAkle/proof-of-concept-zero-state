@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto&display=swap');
+
+body{
+    background-color: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+h1{
+    font-family: 'PT Serif', serif;
+    width: 10%;
+    font-size: 50px;
+}
+
+h2{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 3em;
+}
+
+#colorpreview{
+    margin-bottom: .5em;
+}
+
+#slidermain{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: center;
+    width: 30vh;
+}
+
+#bigcontainer{
+    display:flex;
+    flex-flow: row wrap;
+    width: 16em;
+    justify-content: center;
+    height: auto;
+}
+#colorpreview{
+    width: 30em;
+    height: 4em;
+    border: 2px solid rgba(107, 105, 105, 0.616);
+    border-radius: 30px;
+    align-self: center;
+    margin-top: 10em;
+}
+
+#selectlist{
+    display: flex;
+    flex-flow: column wrap;
+    width: 4em;
+    margin-top: -15em;
+
+}
+
+#textdisplayer{
+    width: 40em;
+    height: 10em;
+    overflow: auto;
+    border: 2px solid rgba(70, 64, 64, 0.582);
+}
+
+#userdisplayer{
+    position: absolute;
+    bottom: 1em;
+    width: 10em;
+    height: 10em;
+    overflow: auto;
+    border: 2px solid rgba(70, 64, 64, 0.582);
+}
+
+#userdisplayer > p:nth-of-type(1){
+    border-bottom: 2px solid rgba(70, 64, 64, 0.582);
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+#userdisplayer > p{
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+#onswitch{
+    margin-bottom: 1em;
+}
+#onswitch > input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+  
+#onswitch > label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 150px;
+    height: 50px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+  
+#onswitch > label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+  
+#onswitch > input:checked + label {
+    background: #bada55;
+  }
+  
+  #onswitch > input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+  
+#onswitch > label:active:after {
+    width: 130px;
+}
+
+
+#selectlist > select, #selectlist > input{
+    margin-left: auto;
+    transform: translateX(40em);
+    width: 10em;
+    padding: .75em;
+    margin-bottom: 1em;
+}
+
+#selectlist > label{
+    transform: translateX(33.5em);
+}
+#selectlist > input{
+    width: 8.35em;
+}
+
+#custom1 > #textdisplayer{
+    width: 20em;
+
+}
+
+#custom1 > h1{
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+}
+
+#custom1 > #onswitch{
+    align-self: center;
+}
+
+#custom1 > #colorpreview{
+    width: 50em;
+    border-radius: 0;
+}
+
+#custom1 > #bigcontainer{
+    align-self: center;
+    width: 25em;
+}
+#custom1 > #bigcontainer > #selectlist{
+    margin-top: -9em;
+}
+#custom1 > #bigcontainer > #selectlist > label{
+    transform: translateX(0);
+}
+
+#custom1 > #bigcontainer > #selectlist > input, #custom1 > #bigcontainer > #selectlist > select{
+    transform: translateX(0);
+}
+
+#custom1 > #bigcontainer > #selectlist2{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10em;
+}
+
+#custom1 > #bigcontainer > #selectlist2 > #rangeSlider{
+    transform: rotate(270deg);
+    margin-top: 5em;
+}
+
+#custom1 > #userdisplayer{
+    left: 5em;
+    bottom: 5em;
+}
+
+#custom2 > h1{
+    align-self: center;    
+}
+
+#custom2 > #slidermain{
+    margin-top: -10em;
+}
+
+#custom2 > #slidermain > #selectlist {
+    flex-flow: row wrap;
+    width: 20em;
+}
+#custom2 > #textdisplayer{
+    height: 30em;
+    width: 20em;
+}
+
+#custom2 > #colorpreview{
+    margin-top: 0;
+}
+
+#custom2 > #slidermain > #selectlist > label{
+    transform: translateX(0);
+}
+
+#custom2 > #slidermain > #selectlist > input, #custom2 > #slidermain > #selectlist > select{
+    transform: translateX(0);
+}
+
+#custom2 > #userdisplayer{
+    right: 2em
+}

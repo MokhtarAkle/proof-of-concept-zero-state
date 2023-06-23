@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero state ontwerpen</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body >
+    <a href="/index.html">Zero-state 1</a>
+    <a href="/custom1.html">Zero-state 2</a>
+    <a href="/custom2.html">Zero-state 3</a>
+    <main id="custom2">
+        <h1>Random Studio</h1>
+        <div id="colorpreview">
+
+        </div>
+    <div id="textdisplayer">
+        
+    </div>
+    <div id="userdisplayer">
+        <p>Connected users:</p>
+
+    </div>
+
+    <section id="slidermain">
+        <div id="selectlist">
+            <label for="psselect">Select preset:</label>
+            <select name="ps" id="psselect">
+    
+            </select>
+            <label for="effectselect">Select effect:</label>
+            <select name="effects" id="effectselect">
+    
+            </select>
+            <label for="paletteselect">Select palette:</label>
+            <select name="palettes" id="paletteselect">
+    
+            </select>
+            <label for="numberCount">Select transition:</label>
+            <input type="number" placeholder="0,00" step="0.01" min="0" max="60" id="numberCount">
+            <input type="submit" value="Save Preset"></input>
+        </div>
+        <div id="bigcontainer">
+
+        <label for="colorpicker">Choose color:</label>
+        <input type="color" id="colorpicker" name="col"
+               value="#34cfe07c">
+
+        <label for="rangeSlider" id="rangeLabel">Select brightness:</label>
+        <input type="range" min="0" max="255" value="100" id="rangeSlider" name="bri">
+        
+        <div id="onswitch">
+            <p>Turn device ON/OFF</p>
+            <input type="checkbox" id="switch" name="on" value="true"/>
+            <label for="switch">Toggle</label>
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+    </main>
+</body>
+</html>
